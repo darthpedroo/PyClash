@@ -30,5 +30,22 @@ class Deck():
             cycle_cards_path.append(self.cards_path + url)
         return cycle_cards_path
     
+    def check_if_main_is_on_deck(self):
+        if self.main_card.get_image_pos() is not None:
+            return True
+        else:
+            return False
+    
+    def check_for_cycle_cards_on_deck(self):
+        for card in self.cycle_cards:
+            if card.get_image_pos() is not None:
+                print(card.image, "Encontrada")
+                return True, card
+            else:
+                print(card.image, "No Encontrada")
+
+        return False, None
+
+
     
     

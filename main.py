@@ -1,14 +1,11 @@
 from Deck import Deck
 from Elixir import Elixir
-from tacticaboba import TacticaBoba
-from tacticabobaIzquierda import TacticaBobaIzquierda
-
+from Tactics.TacticaBoba import TacticaBoba
 
 deck  = Deck()
 elixir = Elixir()
 tactica = TacticaBoba(deck, elixir)
-tactica = TacticaBobaIzquierda(deck, elixir)
 
-tactica.jugar()
+tactica.play()
 
 

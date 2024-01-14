@@ -1,8 +1,14 @@
-import pyautogui
-import time
-import keyboard
-import random
-from test import *
+from Deck import Deck
+from Elixir import Elixir
+from tacticaboba import TacticaBoba
+from tacticabobaIzquierda import TacticaBobaIzquierda
 
-test_arena()
+
+deck  = Deck()
+elixir = Elixir()
+tactica = TacticaBoba(deck, elixir)
+tactica = TacticaBobaIzquierda(deck, elixir)
+
+tactica.jugar()
+
 

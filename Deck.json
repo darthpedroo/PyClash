@@ -1,6 +1,6 @@
 {
     "farming_deck_1_urls": [
         {"main_card": "Royal_Giant.png"}, 
-        {"cycle_cards": ["Skeletons.png", "Heal_Spirit.png", "Electro_Spirit.png", "Fire_Spirit.png", "Ice_Spirit.png", "Bats.png", "Spear_Goblins.png"]}
+        {"cycle_cards": ["Skeletons.png", "Heal_Spirit.png", "Electro_Spirit.png", "Dart_Goblin.png", "Ice_Spirit.png", "Bats.png", "Spear_Goblins.png"]}
     ]
 }

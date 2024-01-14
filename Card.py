@@ -11,11 +11,9 @@ class Card(Image):
         if image_position is not None:
             pyautogui.click(image_position.left +20, image_position.top)
             return True
-
         return False
 
-    def deploy_card_at_bridge(self):
-        
+    def deploy_card(self, card_position): #CardPositionHandler
         if self.click_card():
-            pyautogui.click(random.randint(1074,1143), random.randint(130,480))
+            pyautogui.click(random.randint(card_position.value[0][0],card_position.value[0][1] ), random.randint(card_position.value[1][0], card_position.value[1][1]))
 

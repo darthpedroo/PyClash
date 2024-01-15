@@ -1,6 +1,18 @@
 {
     "farming_deck_1_urls": [
-        {"main_card": "Royal_Giant.png"}, 
-        {"cycle_cards": ["Skeletons.png", "Heal_Spirit.png", "Electro_Spirit.png", "Dart_Goblin.png", "Ice_Spirit.png", "Bats.png", "Spear_Goblins.png"]}
+        {"main_card": 
+            { "name": "Royal Giant", "path":"Royal_Giant.png", "elixir_cost":6, "position":["BRIDGE_LEFT", "BRIDGE_RIGHT"]}
+        },
+        {"cycle_cards": 
+        
+        [{ "name": "Skeletons", "path":"Skeletons.png", "elixir_cost":1, "position":["RANDOM"]},
+        { "name": "Heal Spirit", "path":"Heal_Spirit.png", "elixir_cost":1, "position":["RANDOM"]},
+        { "name": "Electro Spirit", "path":"Electro_Spirit.png", "elixir_cost":1, "position":["RANDOM"]},
+        { "name": "Dart Goblin", "path":"Dart_Goblin.png", "elixir_cost":3, "position":["RANDOM"]},
+        { "name": "Ice Spirit", "path":"Ice_Spirit.png", "elixir_cost":1, "position":["RANDOM"]},
+        { "name": "Bats", "path":"Bats.png", "elixir_cost":2, "position":["RANDOM"]},
+        { "name": "Spear Goblins", "path":"Spear_Goblins.png", "elixir_cost":2, "position":["RANDOM"]}  
+        ]
+    }
     ]
 }

@@ -7,14 +7,14 @@ class TacticaBoba(Tactics):
 
     def __init__(self, deck, elixir,gui):
         super().__init__(deck, elixir,gui)
-
+    
     def play(self):
         while True:
             self.gui.play_again()
             random_position = random.choice(list(CardPositionHandler))
             bridge_random_position = random.choice([CardPositionHandler.BRIDGE_LEFT, CardPositionHandler.BRIDGE_RIGHT])
             
-            if self.deck.check_if_main_is_on_deck():
+            if self.deck.check_if_main_is_on_hand():
                 print(self.deck.main_card)
                 self.deck.main_card.deploy_card(bridge_random_position)
                 time.sleep(self.cooldown)
